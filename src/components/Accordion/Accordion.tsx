@@ -2,11 +2,17 @@ import React from 'react';
 import AccordionTitle from "./AccordionTitle";
 import AccordionBody from "./AccordionBody";
 
-const Accordion = () => {
+type accordionPropsType = {
+    titleValue: string
+    collapsed?: boolean
+}
+
+const Accordion = (props: accordionPropsType) => {
+
     return (
         <div>
-            <AccordionTitle />
-            <AccordionBody />
+            <AccordionTitle titleValue={props.titleValue}/>
+            { props.collapsed === false && <AccordionBody/> }
         </div>
     );
 };

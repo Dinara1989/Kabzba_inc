@@ -9,8 +9,9 @@ function App() {
   return (
     <div className="App">
         <AppTitle title={"Learning React"}/>
+        <Accordion titleValue={"Menu"} collapsed={true}/>
         <Raiting value={3}/>
-        <Accordion />
+        <Accordion titleValue={"Users"} collapsed={false}/>
         <Raiting value={2}/>
     </div>
   );
