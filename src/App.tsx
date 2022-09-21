@@ -15,9 +15,9 @@ function App() {
         <OnOff />
         <OnOff />
         <Accordion titleValue={"Menu"} collapsed={true}/>
-        <Raiting value={3}/>
+        <Raiting />
         <Accordion titleValue={"Users"} collapsed={false}/>
-        <Raiting value={2}/>
+        <Raiting />
 
         <UncontrolledAccordion titleValue={"Numbers"} />
         <UncontrolledAccordion titleValue={"Words"} />
